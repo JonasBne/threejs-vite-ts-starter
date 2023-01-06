@@ -7,20 +7,12 @@ const canvas = document.getElementsByClassName('webgl')[0] as HTMLCanvasElement;
 
 // initiate a scene
 const scene = new THREE.Scene();
-scene.background = new THREE.Color('#111111');
 
-// cube 1
+// mesh
 const geometry = new THREE.BoxGeometry(0.75, 0.75, 0.75);
-const material = new THREE.MeshStandardMaterial({ roughness: 0.2 });
+const material = new THREE.MeshBasicMaterial({ color: 'green'});
 const mesh = new THREE.Mesh(geometry, material);
 scene.add(mesh);
-
-// light
-const pointLight = new THREE.PointLight(0xff9000, 0.5);
-pointLight.position.x = 1;
-const pointlightHelper = new THREE.PointLightHelper(pointLight);
-scene.add(pointLight);
-scene.add(pointlightHelper);
 
 // sizes
 const sizes = {
