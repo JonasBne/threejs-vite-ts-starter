@@ -15,21 +15,28 @@ npx degit https://github.com/JonasBne/threejs-vite-starter-project.git <your-rep
 
 ### Available scripts
 
-Run your local development server.
+```bash
+# clone the repository
+git clone  https://github.com/JonasBne/threejs-vite-starter-project.git <your-optional-repo-name-here>
+```
 
 ```bash
+# install dependencies
+npm install 
+```
+
+```bash
+# run the development server
 npm run dev
 ```
 
-Test your application.
-
 ```bash
+# run your tests
 npm run test
 ```
 
-Build your application.
-
 ```bash
+# build the application
 npm run build
 ```
 
