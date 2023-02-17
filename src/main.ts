@@ -1,6 +1,12 @@
 import './style.css';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import Stats from 'stats.js';
+
+// stats
+const stats = new Stats();
+stats.showPanel(0);
+document.body.appendChild(stats.dom);
 
 // canvas
 const canvas = document.getElementsByClassName('webgl')[0] as HTMLCanvasElement;
@@ -10,7 +16,7 @@ const scene = new THREE.Scene();
 
 // mesh
 const geometry = new THREE.BoxGeometry(0.75, 0.75, 0.75);
-const material = new THREE.MeshBasicMaterial({ color: 'green'});
+const material = new THREE.MeshBasicMaterial({ color: 'green' });
 const mesh = new THREE.Mesh(geometry, material);
 scene.add(mesh);
 
@@ -65,10 +71,14 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setSize(window.innerWidth, window.innerHeight);
 
 const animate = () => {
+  // start stats monitoring
+  stats.begin();
   // enable damping
   controls.update();
   // render scene
   renderer.render(scene, camera);
+  // end of stats monitoring
+  stats.end();
   // pass reference to itself to create infinite loop of frames
   window.requestAnimationFrame(animate);
 };
