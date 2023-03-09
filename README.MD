@@ -1,19 +1,25 @@
-# Three.js starter project with Vite & TypeScript
+# ⚡ Three.js starter project with Vite & TypeScript
+
+![GitHub package.json version](https://img.shields.io/github/package-json/v/JonasBne/threejs-vite-ts-starter?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/JonasBne/threejs-vite-ts-starter?style=flat-square)
 
 ### Description
 
 This is a template starter project to scaffold a new Three.js project with TypeScript and Vite.
-It uses vanilla JavaScript, hence no frameworks are used.
+
+## Stack
+
+- Three.js
+- Vite
+- Prettier
 
 ### Getting started
 
-Scaffold a new project by cloning this repository without the git history.
+## Use template
 
-```bash
-npx degit https://github.com/JonasBne/threejs-vite-starter-project.git <your-repo-name-here> 
-```
+Simply click on `Use this template` on the right top corner of this page to get started.
 
-### Available scripts
+## Available scripts
 
 ```bash
 # clone the repository
@@ -22,17 +28,12 @@ git clone  https://github.com/JonasBne/threejs-vite-starter-project.git <your-op
 
 ```bash
 # install dependencies
-npm install 
+npm install
 ```
 
 ```bash
 # run the development server
 npm run dev
-```
-
-```bash
-# run your tests
-npm run test
 ```
 
 ```bash
@@ -42,26 +43,4 @@ npm run build
 
 ### License
 
-The following license is applied to the source code:
-
-The MIT License (MIT)
-
-Copyright (c) 2023 Jonas Boone
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Copyright (c) 2023 Jonas Boone. MIT License.
